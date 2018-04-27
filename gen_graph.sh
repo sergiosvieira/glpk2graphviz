@@ -13,6 +13,7 @@ echo "digraph G {rankdir=\"LR\";"
 while read LINE; do
 	VAR=$(echo $LINE | cut -d " " -f 2);
 	VAL=$(echo $LINE | cut -d " " -f 4);
+	VAL=$(awk "BEGIN{print $VAL * 1.0 / (0.0864 * 31); exit}")
 	IFS='_' read -r -a array <<< $VAR
 	SIZE=${#array[@]}
 	c=0
@@ -22,9 +23,9 @@ while read LINE; do
 			continue
 		fi
 		if [[ "$element" == "volGoal" ]]; then
-			echo -n $element"_"${array[((c - 1))]}
+			echo -n ${array[((c - 1))]}
 		else
-			if (( SIZE == 1)); then
+			if (( SIZE == 1 )); then
 				VAL=$VAR" = "$VAL;
 			fi
 			echo -n $element
@@ -34,6 +35,7 @@ while read LINE; do
 		fi		
 		c=$(( c + 1 ))
 	done
+	#VAL=$(awk "BEGIN{print $VAL * 1.0 / (0.0864 * 31); exit}")
 	echo -e " [ label=\"$VAL\" ]"
 done < aux
 echo "}"
