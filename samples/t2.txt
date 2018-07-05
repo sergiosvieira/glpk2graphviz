@@ -1,0 +1,26 @@
+\* Problem: Unknown *\
+
+Maximize
+ obj: 30 r1_volGoal + 20 r2_volGoal + 990 j2_d1 + 990 j2_d2 + 10 r1_d5 
+ + 10 j3_d3 + 10 r2_d4
+
+Subject To
+
+r1: r1_j1 + r1_volGoal + r1_d5 <= 100
+r2: r1_volGoal <= 100
+
+r3: - j3_r2 + r2_d4 + r2_volGoal <= 5
+r4: r2_volGoal <= 100
+
+r5: - 0.97 r1_j1 + j1_j2 + j1_j3 = 0
+r6: - 0.9 j1_j2 + j2_d1 + j2_d2 = 0
+r7: - 0.8 j1_j3 + j3_d3 + j3_r2 = 0
+
+r8: j2_d1 <= 10
+r9: j2_d2 <= 10
+r10: j3_d3 <= 99999
+r11: r2_d4 <= 99999
+r12: r1_d5 <= 99999
+
+
+End

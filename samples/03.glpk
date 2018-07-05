@@ -1,0 +1,26 @@
+\* Problem: Unknown *\
+
+Maximize
+ obj: + 9900 r1_z1_d2 + 9900 r1_z1_d4 + 9900 r6_z1_d8 + 100 r1_volGoal
+ + 100 r6_volGoal
+
+Subject To
+ r_0: + r1_volGoal + r1_z1_d4 + r1_z1_d2 <= 30
+ r_1: + r6_volGoal + r6_z1_d8 - r4_z1_r6 <= 30
+ r_2: + r1_z1_d2 <= 8.0352
+ r_3: + r1_z1_d4 <= 5.3568
+ r_4: + r6_z1_d8 <= 2.6784
+ r_5: 0 r1_z1_d2 <= 0
+ r_6: + 2 d4_d6 - r1_z1_d4 + x = 0
+ r_7: - d4_d23 - r1_z1_d4 <= 0
+ r_8: + 2 d4_d25 - r1_z1_d4 = 0
+ r_9: - d4_d27 - r1_z1_d4 <= 0
+ r_10: + r1_z1_d4 + r1_z1_d2 <= 41.59
+ r_11: + r6_z1_d8 <= 41.59
+ r_12: + r1_volGoal <= 41.59
+ r_13: + r6_volGoal <= 41.59
+
+Bounds
+ 5.3568 <= d4_d6 <= 9999
+
+End
