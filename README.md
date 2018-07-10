@@ -15,7 +15,8 @@ sh do.sh samples/04.txt
 * d - demand
 * j - junction
 
-# sample
+# Sample
+```
 \* Problem: Unknown *\
 
 Maximize
@@ -141,5 +142,5 @@ Bounds
  0 <= j16_j17 <= 2678.4
 
 End
-
+```
 open [link to webgraphviz](http://www.webgraphviz.com/) and paste the output.
