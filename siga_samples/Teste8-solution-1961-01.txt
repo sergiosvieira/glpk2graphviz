@@ -1,0 +1,54 @@
+Problem:    
+Rows:       9
+Columns:    9
+Non-zeros:  13
+Status:     OPTIMAL
+Objective:  0 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 r_0          B              0                     69.4805 
+     2 r_1          B              0                     69.4805 
+     3 r_2          B              0             0             = 
+     4 r_3          NS             0             0             =        100000 
+     5 r_4          NS             0             0             =        100000 
+     6 r_5          NS             0             0             =        100000 
+     7 r_6          NS             0             0             =        100000 
+     8 r_7          NS             0             0             =        100000 
+     9 r_8          NS             0             0             =        100000 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 r45_volGoal  B              0             0               
+     2 r67_volGoal  B              0             0               
+     3 r20604_volGoal
+                    B              0             0               
+     4 r20606_volGoal
+                    B              0             0               
+     5 r20607_volGoal
+                    B              0             0               
+     6 r20611_volGoal
+                    B              0             0               
+     7 r45_z1_j40   NL             0             0                       < eps
+     8 r67_z1_j40   NL             0             0                       < eps
+     9 j40_r20611   NL             0             0                       < eps
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

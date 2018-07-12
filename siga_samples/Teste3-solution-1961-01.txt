@@ -1,0 +1,62 @@
+Problem:    
+Rows:       14
+Columns:    12
+Non-zeros:  25
+Status:     OPTIMAL
+Objective:  106064640 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 r_0          B        11.7168                     35.2446 
+     2 r_1          B              0                      21.745 
+     3 r_2          B              0                     1.00322 
+     4 r_3          NU      -1.00322                    -1.00322         < eps
+     5 r_4          B              0                     21.2307 
+     6 r_5          NU       10.7136                     10.7136       9.9e+06 
+     7 r_6          NS             0             0             =        100000 
+     8 r_7          NS             0             0             =         < eps
+     9 r_8          B              0             0             = 
+    10 r_9          B        10.7136                       377.5 
+    11 r_10         NS             0             0             =        100000 
+    12 r_11         NS             0             0             =        100000 
+    13 r_12         NS             0             0             =         2e+06 
+    14 r_13         NS             0             0             =        100000 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 r71_z1_d81   B        10.7136             0               
+     2 j20473_d20591
+                    B              0             0               
+     3 r45_volGoal  B              0             0               
+     4 r67_volGoal  B              0             0               
+     5 r71_volGoal  B              0             0               
+     6 r20461_volGoal
+                    B              0             0               
+     7 r45_z1_j40   B        11.7168             0               
+     8 r67_z1_j40   NL             0             0                       < eps
+     9 j40_r71      B        11.7168             0               
+    10 r71_z1_r20461
+                    NL             0             0                       < eps
+    11 r71_s        NL             0             0                      -1e+07 
+    12 r20461_z1_j20473
+                    NL             0             0                       < eps
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 1.60e-14 on row 10
+        max.rel.err = 7.13e-16 on row 10
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
