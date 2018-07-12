@@ -3,35 +3,35 @@ Rows:       9
 Columns:    8
 Non-zeros:  13
 Status:     OPTIMAL
-Objective:  106064640 (MAXimum)
+Objective:  139421376.8 (MAXimum)
 
    No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
-     1 r_0          B        10.7136                     69.4805 
-     2 r_1          B              0                     69.4805 
-     3 r_2          NU       10.7136                     10.7136       9.9e+06 
-     4 r_3          NS             0             0             =         < eps
-     5 r_4          NS             0             0             =        100000 
-     6 r_5          NS             0             0             =        100000 
-     7 r_6          NS             0             0             =        100000 
-     8 r_7          NS             0             0             =        100000 
-     9 r_8          NS             0             0             =        100000 
+     1 r_0          NU       69.4805                     69.4805        100000 
+     2 r_1          NU       69.4805                     69.4805        100000 
+     3 r_2          NS       10.7136       10.7136             =       9.8e+06 
+     4 r_3          NS             0             0             =        100000 
+     5 r_4          B        59.8074                       68.44 
+     6 r_5          NU         68.44                       68.44         < eps
+     7 r_6          NU         68.44                       68.44        100000 
+     8 r_7          NU         68.44                       68.44        100000 
+     9 r_8          NU         68.44                       68.44        100000 
 
    No. Column name  St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
      1 j2_d1        B        10.7136             0               
-     2 r3_volGoal   B              0             0               
-     3 r4_volGoal   B              0             0               
-     4 r5_volGoal   B              0             0               
-     5 r6_volGoal   B              0             0               
-     6 r7_volGoal   B              0             0               
-     7 r3_z1_j2     B        10.7136             0               
-     8 r4_z1_j2     NL             0             0                       < eps
+     2 r3_volGoal   B        59.8074             0               
+     3 r4_volGoal   B          68.44             0               
+     4 r5_volGoal   B          68.44             0               
+     5 r6_volGoal   B          68.44             0               
+     6 r7_volGoal   B          68.44             0               
+     7 r3_z1_j2     B        9.67312             0               
+     8 r4_z1_j2     B        1.04048             0               
 
 Karush-Kuhn-Tucker optimality conditions:
 
-KKT.PE: max.abs.err = 1.78e-15 on row 1
-        max.rel.err = 7.92e-17 on row 1
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
         High quality
 
 KKT.PB: max.abs.err = 0.00e+00 on row 0

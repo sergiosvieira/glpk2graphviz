@@ -12,14 +12,14 @@ Subject To
  r_3: - r7_s + r7_volGoal + r7_z1_r8 + r7_z1_d1 - j3_r7
  <= -1.00322342376467
  r_4: + r8_volGoal + r8_z1_j4 - 0.95 r7_z1_r8 <= 21.2306738052866
- r_5: + r7_z1_d1 <= 10.7136
- r_6: + j4_d2 = 0
+ r_5: + r7_z1_d1 = 10.7136
+ r_6: + 0.95 j4_d2 <= 267837.3216
  r_7: - r6_z1_j3 - r5_z1_j3 + j3_r7 = 0
  r_8: - 0.95 r8_z1_j4 + j4_d2 = 0
  r_9: + r7_z1_d1 <= 377.5
- r_10: + r5_volGoal = 0
- r_11: + r6_volGoal = 0
- r_12: + r7_volGoal = 0
- r_13: + r8_volGoal = 0
+ r_10: + r5_volGoal <= 68.44
+ r_11: + r6_volGoal <= 44.67
+ r_12: + r7_volGoal <= 377.5
+ r_13: + r8_volGoal <= 250.97
 
 End
