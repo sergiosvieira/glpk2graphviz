@@ -24,22 +24,18 @@ Objective:  52496640 (MAXimum)
 
    No. Column name  St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
-     1 r71_z1_d81   B        10.7136             0               
-     2 j20473_d20591
-                    B              0             0               
-     3 r45_volGoal  B              0             0               
-     4 r67_volGoal  B              0             0               
-     5 r71_volGoal  B              0             0               
-     6 r20461_volGoal
-                    B              0             0               
-     7 r45_z1_j40   B        11.7168             0               
-     8 r67_z1_j40   NL             0             0                       < eps
-     9 j40_r71      B        11.7168             0               
-    10 r71_z1_r20461
-                    NL             0             0                       < eps
-    11 r71_s        NL             0             0                      -1e+07 
-    12 r20461_z1_j20473
-                    NL             0             0                       < eps
+     1 r7_z1_d1     B        10.7136             0               
+     2 j4_d2        B              0             0               
+     3 r5_volGoal   B              0             0               
+     4 r6_volGoal   B              0             0               
+     5 r7_volGoal   B              0             0               
+     6 r8_volGoal   B              0             0               
+     7 r5_z1_j3     B        11.7168             0               
+     8 r6_z1_j3     NL             0             0                       < eps
+     9 j3_r7        B        11.7168             0               
+    10 r7_z1_r8     NL             0             0                       < eps
+    11 r7_s         NL             0             0                      -1e+07 
+    12 r8_z1_j4     NL             0             0                       < eps
 
 Karush-Kuhn-Tucker optimality conditions:
 
