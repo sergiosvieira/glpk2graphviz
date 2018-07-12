@@ -1,18 +1,18 @@
 \* Problem: Unknown *\
 
 Maximize
- obj: + 9900000 j40_d81 + 100000 r45_volGoal + 100000 r67_volGoal
- + 100000 r20604_volGoal + 100000 r20606_volGoal + 100000 r20607_volGoal
+ obj: + 9900000 j2_d1 + 100000 r3_volGoal + 100000 r4_volGoal
+ + 100000 r5_volGoal + 100000 r6_volGoal + 100000 r7_volGoal
 
 Subject To
- r_0: + r45_volGoal + r45_z1_j40 <= 69.4804840636911
- r_1: + r67_volGoal + r67_z1_j40 <= 69.4804840636911
- r_2: + j40_d81 <= 10.7136
- r_3: - r67_z1_j40 - r45_z1_j40 + j40_d81 = 0
- r_4: + r45_volGoal = 0
- r_5: + r67_volGoal = 0
- r_6: + r20604_volGoal = 0
- r_7: + r20606_volGoal = 0
- r_8: + r20607_volGoal = 0
+ r_0: + r3_volGoal + r3_z1_j2 <= 69.4804840190445
+ r_1: + r4_volGoal + r4_z1_j2 <= 69.4804840190445
+ r_2: + j2_d1 <= 10.7136
+ r_3: - r4_z1_j2 - r3_z1_j2 + j2_d1 = 0
+ r_4: + r3_volGoal = 0
+ r_5: + r4_volGoal = 0
+ r_6: + r5_volGoal = 0
+ r_7: + r6_volGoal = 0
+ r_8: + r7_volGoal = 0
 
 End

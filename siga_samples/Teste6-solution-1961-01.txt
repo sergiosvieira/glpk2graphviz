@@ -19,17 +19,14 @@ Objective:  106064640 (MAXimum)
 
    No. Column name  St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
-     1 j40_d81      B        10.7136             0               
-     2 r45_volGoal  B              0             0               
-     3 r67_volGoal  B              0             0               
-     4 r20604_volGoal
-                    B              0             0               
-     5 r20606_volGoal
-                    B              0             0               
-     6 r20607_volGoal
-                    B              0             0               
-     7 r45_z1_j40   B        10.7136             0               
-     8 r67_z1_j40   NL             0             0                       < eps
+     1 j2_d1        B        10.7136             0               
+     2 r3_volGoal   B              0             0               
+     3 r4_volGoal   B              0             0               
+     4 r5_volGoal   B              0             0               
+     5 r6_volGoal   B              0             0               
+     6 r7_volGoal   B              0             0               
+     7 r3_z1_j2     B        10.7136             0               
+     8 r4_z1_j2     NL             0             0                       < eps
 
 Karush-Kuhn-Tucker optimality conditions:
 
