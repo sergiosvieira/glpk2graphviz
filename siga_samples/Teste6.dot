@@ -1,0 +1,11 @@
+digraph G {rankdir="LR";
+	j2->d1 [label="10.7136"] j2 [shape="circle"] d1 [shape="diamond"]
+	r3->r3 [label="68.44"]
+	r4->r4 [label="59.8074"]
+	r5->r5 [label="68.44"]
+	r6->r6 [label="68.44"]
+	r7->r7 [label="68.44"]
+	r3->j2 [label="1.04048"] r3 [shape="invtrapezium"]
+	r4->j2 [label="9.67312"] r4 [shape="invtrapezium"]
+}
+

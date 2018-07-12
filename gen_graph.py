@@ -2,6 +2,7 @@
 #coding= utf-8
 
 import sys
+import pdb
 
 def file_error():
     print("Error: please type input file name")
@@ -19,6 +20,7 @@ def is_close(a, b, rel_tol=1e-09, abs_tol=0.0):
     return abs(a - b) <= max(rel_tol * max(abs(a), abs(b)), abs_tol)
 
 def create_dot_string(var, value):
+    #pdb.set_trace()
     array = var.split('_')
     if len(array) == 1:
         #return '\t{}->{} [label="{}"]\n'.format(array[0], array[0], value)
@@ -54,17 +56,28 @@ def process(filename):
         output_string = ""
         begin = 0
         end = 0
+        aux_var = ""
+        aux_val = 0.0
         for line in file:
             if is_row(line):
                 rows = int(line.strip().split(':')[1])
+                #pdb.set_trace()
                 begin = 9 + rows + 4
             elif is_col(line):
                 cols = int(line.strip().split(':')[1])
+                #pdb.set_trace()
                 end = begin + cols
             elif end > begin and num_line >= begin and num_line < end:
                 array = ' '.join(line.split()).split()
                 if len(array) < 4:
-                    num_line += 1
+                    if len(aux_var) == 0:
+                        aux_var = array[1]
+                    else:
+                        aux_val = array[1]
+                        output_string += create_dot_string(aux_var, aux_val)
+                        aux_var = ""
+                        aux_val = 0.0
+                        num_line += 1
                     continue
                 var, val = extract_var_name_value(array)
                 output_string += create_dot_string(var, val)

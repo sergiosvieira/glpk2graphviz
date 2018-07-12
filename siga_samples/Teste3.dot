@@ -1,0 +1,13 @@
+digraph G {rankdir="LR";
+	r7->d1 [label="10.7136"] r7 [shape="invtrapezium"] d1 [shape="diamond"]
+	j4->d2 [label="0" color="gray"] j4 [shape="circle"] d2 [shape="diamond"]
+	r5->r5 [label="0"]
+	r6->r6 [label="0"]
+	r7->r7 [label="45.2728"]
+	r8->r8 [label="21.2307"]
+	r5->j3 [label="35.2446"] r5 [shape="invtrapezium"]
+	r6->j3 [label="21.745"] r6 [shape="invtrapezium"]
+	r7->r8 [label="0"] r7 [shape="invtrapezium"]
+	j3->r7 [label="56.9896"] j3 [shape="circle"]
+	r8->j4 [label="0"] r8 [shape="invtrapezium"]
+}
